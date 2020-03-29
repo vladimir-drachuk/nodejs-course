@@ -3,9 +3,8 @@
 const stream = require('stream');
 
 class CaesarCipher extends stream.Transform {
-    constructor(shift, options = {}) {
-        options = Object.assign({}, options, { decodeStrings: false });
-        super(options);
+    constructor(shift) {
+        super();
         this.shift = shift;
         this.beginLowerCase = 97;
         this.beginUpperCase = 65;
@@ -14,7 +13,7 @@ class CaesarCipher extends stream.Transform {
         this.alphabetAmount = 26;
     }
 
-    _caesar(code, minValue, maxValue) {
+    _caesarChange(code, minValue, maxValue) {
         return (this.shift >= 0)
          ? ((code + +this.shift - minValue) % this.alphabetAmount) + minValue
          : maxValue - ((maxValue - code - +this.shift) % this.alphabetAmount);
@@ -25,19 +24,20 @@ class CaesarCipher extends stream.Transform {
         if (code >= this.beginLowerCase && code <= this.endLowerCase
          || code >= this.beginUpperCase && code <= this.endUpperCase) {
             code = (code > this.endUpperCase)
-                ? this._caesar(code, this.beginLowerCase, this.endLowerCase)
-                : this._caesar(code, this.beginUpperCase, this.endUpperCase)
+                ? this._caesarChange(code, this.beginLowerCase, this.endLowerCase)
+                : this._caesarChange(code, this.beginUpperCase, this.endUpperCase)
         }
         return String.fromCharCode(code);
     }
 
-    _transform(chunk) {
+    _transform(chunk, encode, callback) {
         const transformChunk = chunk
             .toString()
             .split('')
             .map((item) => this._shift(item))
             .join('')
-        this.push(transformChunk)
+        this.push(transformChunk);
+        callback();
     }
 }
 
