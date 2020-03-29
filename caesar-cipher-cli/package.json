@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "caesar-cli.js",
+  "engines": {
+    "node": ">=10.0.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,7 +19,12 @@
     "url": "https://github.com/vladimir-drachuk/nodejs-course/issues"
   },
   "homepage": "https://github.com/vladimir-drachuk/nodejs-coursek#readme",
-  "devDependencies": {
+  "files": [
+    "commander",
+    "encryptor.js",
+    "transform-stream.js"
+  ],
+  "dependencies": {
     "commander": "^5.0.0"
   }
 }

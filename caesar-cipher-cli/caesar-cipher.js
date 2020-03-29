@@ -1,5 +1,7 @@
+/* eslint-disable no-sync */
 const { program } = require('commander');
 const { encryption } = require('./encryptor');
+const fs = require('fs');
 
 program
   .requiredOption('-s, --shift <number>', 'a shift')
@@ -8,6 +10,12 @@ program
   .option('-o, --output <file-path>', 'an output file')
   .action(() => {
     const keys = program.opts();
+    if (keys.input && !fs.existsSync(`${__dirname}/${keys.input}`)) {
+      throw Error('incorrect path');
+    }
+    if (keys.output && !fs.existsSync(`${__dirname}/${keys.output}`)) {
+      throw Error('incorrect path');
+    }
     switch (keys.action) {
       case 'encode':
         encryption(keys);

@@ -5,10 +5,12 @@ const CaesarCipher = require('./transform-stream');
 function encryption(keys) {
   const transformStream = new CaesarCipher(keys.shift);
   pipeline(
-    keys.input ? fs.createReadStream(keys.input) : process.stdin,
+    keys.input
+      ? fs.createReadStream(`${__dirname}/${keys.input}`)
+      : process.stdin,
     transformStream,
     keys.output
-      ? fs.createWriteStream(keys.output, { flags: 'a' })
+      ? fs.createWriteStream(`${__dirname}/${keys.output}`, { flags: 'a' })
       : process.stdout,
     err => {
       if (err) console.error('Pipline failed', err);
