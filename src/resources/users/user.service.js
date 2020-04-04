@@ -3,14 +3,14 @@ const User = require('./user.model');
 
 const getAll = () => usersRepo.getAll();
 
-const getUser = params =>
-  getAll().then(data => data.find(user => user.id === params.id));
-
 const createUser = newUser =>
   getAll().then(data => {
     data.push(new User(newUser));
     return data;
   });
+
+const getUser = params =>
+  getAll().then(data => data.find(user => user.id === params.id));
 
 const updateUser = (user, updateInfo) => Object.assign(user, updateInfo);
 
