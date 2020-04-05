@@ -77,7 +77,6 @@ describe('Users suite', () => {
     it('should update user successfully', async () => {
       // Setup
       let userId;
-
       await request
         .post(routes.users.create)
         .set('Accept', 'application/json')

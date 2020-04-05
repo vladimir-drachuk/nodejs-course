@@ -15,11 +15,23 @@ const createTask = (params, newTask) =>
 const getTaskById = params =>
   getAll().then(tasks => tasks.find(task => task.id === params.taskId));
 
-const updateTask = (params, updateInfo) =>
-  Object.assign(getTaskById(params), updateInfo, {
-    boardId: params.id,
-    taskId: params.taskId
+const clearTaskByUserId = taskId =>
+  getAll().then(tasks => {
+    const tasksClear = tasks.filter(task => task.userId === taskId);
+    tasksClear.forEach(item => {
+      item.userId = null;
+    });
   });
+
+const updateTask = (task, updateInfo, params) => {
+  console.log(task);
+  const updatedTask = Object.assign(task, updateInfo, {
+    boardId: params.id,
+    id: params.taskId
+  });
+  console.log(updatedTask);
+  return updatedTask;
+};
 
 const deleteTask = (task, taskList) => {
   taskList.splice(taskList.indexOf(task), 1);
@@ -30,5 +42,6 @@ module.exports = {
   createTask,
   getTaskById,
   updateTask,
-  deleteTask
+  deleteTask,
+  clearTaskByUserId
 };

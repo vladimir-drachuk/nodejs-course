@@ -48,8 +48,13 @@ router
     res.json(task);
   })
   .put(async (req, res) => {
-    const task = await tasksService.updateTask(req.params, req.body);
-    res.json(task);
+    const task = await tasksService.getTaskById(req.params);
+    const updatedTask = await tasksService.updateTask(
+      task,
+      req.body,
+      req.params
+    );
+    res.json(updatedTask);
   })
   .delete(async (req, res) => {
     const task = await tasksService.getTaskById(req.params);
