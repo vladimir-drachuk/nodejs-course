@@ -7,6 +7,7 @@ class Task {
     order = 'order',
     description = 'Something about task',
     userId = null,
+    boardId = null,
     columnId = null
   } = {}) {
     this.id = id;
@@ -14,6 +15,7 @@ class Task {
     this.order = order;
     this.description = description;
     this.userId = userId;
+    this.boardId = boardId;
     this.columnId = columnId;
   }
 }

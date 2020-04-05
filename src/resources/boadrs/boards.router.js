@@ -30,10 +30,32 @@ router
     res.json('The user has been deleted');
   });
 
-router.route('/:id/tasks').get(async (req, res) => {
-  const tasks = await tasksService.getAllById(req.params);
-  console.log(tasks);
-  res.json(tasks);
-});
+router
+  .route('/:id/tasks')
+  .get(async (req, res) => {
+    const tasks = await tasksService.getAllById(req.params);
+    res.json(tasks);
+  })
+  .post(async (req, res) => {
+    const tasks = await tasksService.createTask(req.params, req.body);
+    res.json(tasks);
+  });
+
+router
+  .route('/:id/tasks/:taskId')
+  .get(async (req, res) => {
+    const task = await tasksService.getTaskById(req.params);
+    res.json(task);
+  })
+  .put(async (req, res) => {
+    const task = await tasksService.updateTask(req.params, req.body);
+    res.json(task);
+  })
+  .delete(async (req, res) => {
+    const task = await tasksService.getTaskById(req.params);
+    const tasks = await tasksService.getAll();
+    tasksService.deleteTask(task, tasks);
+    res.json('The task has been deleted');
+  });
 
 module.exports = router;
