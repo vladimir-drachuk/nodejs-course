@@ -29,7 +29,7 @@ router
     if (user) {
       res.json(User.toResponse(usersService.updateUser(user, req.body)));
     } else {
-      res.status(200).json('There are no users with this ID');
+      res.status(404).json('There are no users with this ID');
     }
   })
   .delete(async (req, res) => {

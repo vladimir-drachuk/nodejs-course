@@ -3,7 +3,11 @@ const User = require('./user.model');
 
 const getAll = () => usersRepo.getAll();
 
-const createUser = newUser => new User(newUser);
+const createUser = newUser => {
+  const user = new User(newUser);
+  getAll().then(users => users.push(user));
+  return user;
+};
 
 const getUser = params =>
   getAll().then(data => data.find(user => user.id === params.id));

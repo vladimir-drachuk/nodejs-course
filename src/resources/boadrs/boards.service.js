@@ -3,11 +3,11 @@ const Board = require('./boards.model');
 
 const getAll = () => boardsRepo.getAll();
 
-const createBoard = newBoard =>
-  getAll().then(data => {
-    data.push(new Board(newBoard));
-    return data;
-  });
+const createBoard = newBoard => {
+  const board = new Board(newBoard);
+  getAll().then(boards => boards.push(board));
+  return board;
+};
 
 const getBoard = params =>
   getAll().then(data => data.find(board => board.id === params.id));

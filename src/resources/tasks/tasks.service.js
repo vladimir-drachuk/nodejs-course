@@ -6,11 +6,11 @@ const getAll = () => tasksRepo.getAll();
 const getAllById = params =>
   getAll().then(tasks => tasks.filter(task => task.boardId === params.id));
 
-const createTask = (params, newTask) =>
-  getAll().then(tasks => {
-    tasks.push(new Task(Object.assign(newTask, { boardId: params.id })));
-    return tasks;
-  });
+const createTask = (params, newTask) => {
+  const task = new Task(Object.assign(newTask, { boardId: params.id }));
+  getAll().then(tasks => tasks.push(task));
+  return task;
+};
 
 const getTaskById = params =>
   getAll().then(tasks => tasks.find(task => task.id === params.taskId));
@@ -24,17 +24,24 @@ const clearTaskByUserId = taskId =>
   });
 
 const updateTask = (task, updateInfo, params) => {
-  console.log(task);
   const updatedTask = Object.assign(task, updateInfo, {
     boardId: params.id,
     id: params.taskId
   });
-  console.log(updatedTask);
   return updatedTask;
 };
 
-const deleteTask = (task, taskList) => {
-  taskList.splice(taskList.indexOf(task), 1);
+const deleteTask = task => {
+  getAll().then(tasks => tasks.splice(tasks.indexOf(task), 1));
+};
+
+const deleteTaskByBoard = boardId => {
+  getAll().then(tasks => {
+    const deletedTask = tasks.filter(task => task.boardId === boardId);
+    deletedTask.forEach(task => {
+      tasks.splice(tasks.indexOf(task), 1);
+    });
+  });
 };
 
 module.exports = {
@@ -43,5 +50,6 @@ module.exports = {
   getTaskById,
   updateTask,
   deleteTask,
-  clearTaskByUserId
+  clearTaskByUserId,
+  deleteTaskByBoard
 };

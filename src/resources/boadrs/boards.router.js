@@ -9,15 +9,19 @@ router
     res.json(boards);
   })
   .post(async (req, res) => {
-    const boards = await boardsService.createBoard(req.body);
-    res.json(boards);
+    const board = await boardsService.createBoard(req.body);
+    res.json(board);
   });
 
 router
   .route('/:id')
   .get(async (req, res) => {
     const board = await boardsService.getBoard(req.params);
-    res.json(board);
+    if (board) {
+      res.json(board);
+    } else {
+      res.status(404).json('no boards');
+    }
   })
   .put(async (req, res) => {
     const user = await boardsService.getBoard(req.params);
@@ -27,6 +31,7 @@ router
     const board = await boardsService.getBoard(req.params);
     const boards = await boardsService.getAll();
     boardsService.deleteBoard(board, boards);
+    tasksService.deleteTaskByBoard(req.params.id);
     res.json('The user has been deleted');
   });
 
@@ -37,15 +42,19 @@ router
     res.json(tasks);
   })
   .post(async (req, res) => {
-    const tasks = await tasksService.createTask(req.params, req.body);
-    res.json(tasks);
+    const task = await tasksService.createTask(req.params, req.body);
+    res.json(task);
   });
 
 router
   .route('/:id/tasks/:taskId')
   .get(async (req, res) => {
     const task = await tasksService.getTaskById(req.params);
-    res.json(task);
+    if (task) {
+      res.json(task);
+    } else {
+      res.status(404).json('no tasks');
+    }
   })
   .put(async (req, res) => {
     const task = await tasksService.getTaskById(req.params);
@@ -58,8 +67,7 @@ router
   })
   .delete(async (req, res) => {
     const task = await tasksService.getTaskById(req.params);
-    const tasks = await tasksService.getAll();
-    tasksService.deleteTask(task, tasks);
+    tasksService.deleteTask(task);
     res.json('The task has been deleted');
   });
 
