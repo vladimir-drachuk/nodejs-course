@@ -4,6 +4,7 @@ const path = require('path');
 const YAML = require('yamljs');
 const userRouter = require('./resources/users/user.router');
 const boardsRouter = require('./resources/boadrs/boards.router');
+const { requestLog } = require('./common/logger');
 
 const app = express();
 const swaggerDocument = YAML.load(path.join(__dirname, '../doc/api.yaml'));
@@ -11,6 +12,11 @@ const swaggerDocument = YAML.load(path.join(__dirname, '../doc/api.yaml'));
 app.use(express.json());
 
 app.use('/doc', swaggerUI.serve, swaggerUI.setup(swaggerDocument));
+
+app.use((req, res, next) => {
+  requestLog(req);
+  next();
+});
 
 app.use('/', (req, res, next) => {
   if (req.originalUrl === '/') {

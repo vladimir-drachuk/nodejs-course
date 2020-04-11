@@ -1,7 +1,6 @@
 const router = require('express').Router();
 const User = require('./user.model');
 const usersService = require('./user.service');
-const taskService = require('../tasks/tasks.service');
 
 router
   .route('/')
@@ -17,7 +16,7 @@ router
 router
   .route('/:id')
   .get(async (req, res) => {
-    const user = await usersService.getUser(req.params);
+    const user = await usersService.getUser(req.params.id);
     if (user) {
       await res.json(User.toResponse(user));
     } else {
@@ -25,7 +24,7 @@ router
     }
   })
   .put(async (req, res) => {
-    const user = await usersService.getUser(req.params);
+    const user = await usersService.getUser(req.params.id);
     if (user) {
       res.json(User.toResponse(usersService.updateUser(user, req.body)));
     } else {
@@ -33,11 +32,13 @@ router
     }
   })
   .delete(async (req, res) => {
-    const user = await usersService.getUser(req.params);
-    const users = await usersService.getAll();
-    taskService.clearTaskByUserId(req.params.id);
-    usersService.deleteUser(user, users);
-    res.json('The user has been deleted');
+    const user = await usersService.getUser(req.params.id);
+    if (user) {
+      usersService.deleteUser(req.params.id);
+      res.json('The user has been deleted');
+    } else {
+      res.status(404).json('There are no users with this ID');
+    }
   });
 
 module.exports = router;
