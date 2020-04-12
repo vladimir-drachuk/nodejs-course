@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const User = require('./user.model');
 const usersService = require('./user.service');
+const { errorHandler } = require('../../common/error-handler');
 
 router
   .route('/')
@@ -20,7 +21,7 @@ router
     if (user) {
       await res.json(User.toResponse(user));
     } else {
-      res.status(404).json('Not found');
+      errorHandler(res, 'no users with this ID');
     }
   })
   .put(async (req, res) => {
@@ -28,7 +29,7 @@ router
     if (user) {
       res.json(User.toResponse(usersService.updateUser(user, req.body)));
     } else {
-      res.status(404).json('There are no users with this ID');
+      errorHandler(res, 'no users with this ID');
     }
   })
   .delete(async (req, res) => {
@@ -37,7 +38,7 @@ router
       usersService.deleteUser(req.params.id);
       res.json('The user has been deleted');
     } else {
-      res.status(404).json('There are no users with this ID');
+      errorHandler(res, 'no users with this ID');
     }
   });
 

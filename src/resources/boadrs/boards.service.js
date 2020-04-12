@@ -13,7 +13,6 @@ const updateBoard = (board, updateInfo) =>
 const deleteBoard = board => {
   boardsRepo.deleteBoard(board);
   tasksService.deleteTaskByBoard(board.id);
-  Promise.reject(2);
 };
 
 module.exports = { getAll, createBoard, getBoard, updateBoard, deleteBoard };

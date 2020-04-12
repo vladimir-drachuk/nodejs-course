@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const boardsService = require('./boards.service');
 const tasksService = require('../tasks/tasks.service');
+const { errorHandler } = require('../../common/error-handler');
 
 router
   .route('/')
@@ -20,7 +21,7 @@ router
     if (board) {
       res.json(board);
     } else {
-      res.status(404).json('no boards');
+      errorHandler(res, 'no boards with this ID');
     }
   })
   .put(async (req, res) => {
@@ -33,7 +34,7 @@ router
       boardsService.deleteBoard(board);
       res.json('The user has been deleted');
     } else {
-      res.status(404).json('no board with this id');
+      errorHandler(res, 'no board with this id');
     }
   });
 
@@ -55,7 +56,7 @@ router
     if (task) {
       res.json(task);
     } else {
-      res.status(404).json('no tasks');
+      errorHandler(res, 'no tasks');
     }
   })
   .put(async (req, res) => {

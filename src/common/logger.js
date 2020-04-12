@@ -25,9 +25,11 @@ const requestLog = req => {
 const rejectLog = (reason, promise) =>
   logger.log(
     'error',
-    `${JSON.stringify(promise)} rejected for a reason ${reason}`
+    `Promise ${JSON.stringify(promise)} rejected for a reason ${reason}`
   );
 
-const uncaughtLog = err => logger.log(`Uncaught error: ${err}`);
+const uncaughtLog = err => logger.error(`Uncaught: ${err}`);
 
-module.exports = { requestLog, rejectLog, uncaughtLog };
+const errorLog = (text, err) => logger.error(`${text}: ${err}`);
+
+module.exports = { requestLog, rejectLog, uncaughtLog, errorLog };
