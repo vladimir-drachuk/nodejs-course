@@ -1,13 +1,9 @@
 const { errorLog } = require('./logger');
-const {
-  INTERNAL_SERVER_ERROR,
-  NOT_FOUND,
-  getStatusText
-} = require('http-status-codes');
+const { INTERNAL_SERVER_ERROR, getStatusText } = require('http-status-codes');
 
-const errorHandler = (res, message) => {
-  res.status(NOT_FOUND).json(message);
-  errorLog('not found', NOT_FOUND);
+const errorHandler = (res, status, message) => {
+  res.status(status).json(message);
+  errorLog(message, status);
 };
 
 const handleInternalErr = (req, res) => {

@@ -2,6 +2,7 @@ const router = require('express').Router();
 const User = require('./user.model');
 const usersService = require('./user.service');
 const { errorHandler } = require('../../common/error-handler');
+const { BAD_REQUEST, NOT_FOUND } = require('http-status-codes');
 
 router
   .route('/')
@@ -10,6 +11,10 @@ router
     res.json(users.map(User.toResponse));
   })
   .post(async (req, res) => {
+    if (!req.body.name || !req.body.login || !req.body.password) {
+      errorHandler(res, BAD_REQUEST, 'Bad request');
+      return;
+    }
     const user = await usersService.createUser(req.body);
     res.json(User.toResponse(user));
   });
@@ -21,7 +26,7 @@ router
     if (user) {
       await res.json(User.toResponse(user));
     } else {
-      errorHandler(res, 'no users with this ID');
+      errorHandler(res, NOT_FOUND, 'no users with this ID');
     }
   })
   .put(async (req, res) => {
@@ -29,7 +34,7 @@ router
     if (user) {
       res.json(User.toResponse(usersService.updateUser(user, req.body)));
     } else {
-      errorHandler(res, 'no users with this ID');
+      errorHandler(res, NOT_FOUND, 'no users with this ID');
     }
   })
   .delete(async (req, res) => {
@@ -38,7 +43,7 @@ router
       usersService.deleteUser(req.params.id);
       res.json('The user has been deleted');
     } else {
-      errorHandler(res, 'no users with this ID');
+      errorHandler(res, NOT_FOUND, 'no users with this ID');
     }
   });
 
