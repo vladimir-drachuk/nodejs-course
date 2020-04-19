@@ -8,7 +8,7 @@ router
   .route('/')
   .get(async (req, res) => {
     const boards = await boardsService.getAll();
-    res.json(boards);
+    await res.json(boards); //
   })
   .post(async (req, res) => {
     if (!req.body.title || !req.body.columns) {
@@ -16,7 +16,7 @@ router
       return;
     }
     const board = await boardsService.createBoard(req.body);
-    res.json(board);
+    await res.json(board); //
   });
 
 router
@@ -24,7 +24,7 @@ router
   .get(async (req, res) => {
     const board = await boardsService.getBoard(req.params.id);
     if (board) {
-      res.json(board);
+      await res.json(board); //
     } else {
       errorHandler(res, NOT_FOUND, 'no boards with this ID');
     }
@@ -32,7 +32,7 @@ router
   .put(async (req, res) => {
     const user = await boardsService.getBoard(req.params.id);
     if (user) {
-      res.json(boardsService.updateBoard(user, req.body));
+      await res.json(boardsService.updateBoard(user, req.body));
     } else {
       errorHandler(res, NOT_FOUND, 'no boards with this ID');
     }
@@ -40,8 +40,8 @@ router
   .delete(async (req, res) => {
     const board = await boardsService.getBoard(req.params.id);
     if (board) {
-      boardsService.deleteBoard(board);
-      res.json('The user has been deleted');
+      await boardsService.deleteBoard(req.params.id);
+      await res.json('The user has been deleted'); //
     } else {
       errorHandler(res, NOT_FOUND, 'no board with this ID');
     }
@@ -51,7 +51,7 @@ router
   .route('/:id/tasks')
   .get(async (req, res) => {
     const tasks = await tasksService.getAllById(req.params.id);
-    res.json(tasks);
+    await res.json(tasks); //
   })
   .post(async (req, res) => {
     if (
@@ -65,7 +65,7 @@ router
       return;
     }
     const task = await tasksService.createTask(req.params.id, req.body);
-    res.json(task);
+    await res.json(task);
   });
 
 router
@@ -73,20 +73,20 @@ router
   .get(async (req, res) => {
     const task = await tasksService.getTaskById(req.params.taskId);
     if (task) {
-      res.json(task);
+      await res.json(task); //
     } else {
       errorHandler(res, NOT_FOUND, 'no tasks with this ID');
     }
   })
   .put(async (req, res) => {
     const updatedTask = await tasksService.updateTask(req.params, req.body);
-    res.json(updatedTask);
+    await res.json(updatedTask); //
   })
   .delete(async (req, res) => {
     const task = await tasksService.getTaskById(req.params.taskId);
     if (task) {
-      tasksService.deleteTask(task);
-      res.json('The task has been deleted');
+      await tasksService.deleteTask(req.params.taskId);
+      await res.json('The task has been deleted'); //
     } else {
       errorHandler(res, NOT_FOUND, 'no tasks with this ID');
     }

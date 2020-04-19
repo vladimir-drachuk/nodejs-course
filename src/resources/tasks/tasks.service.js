@@ -1,4 +1,4 @@
-const tasksRepo = require('./tasks.memory.repository');
+const tasksRepo = require('./tasks.db.repository');
 
 const getAll = () => tasksRepo.getAll();
 
@@ -8,12 +8,12 @@ const createTask = (id, newTask) => tasksRepo.createTask(id, newTask);
 
 const getTaskById = id => tasksRepo.getTaskById(id);
 
-const clearTaskByUserId = id => tasksRepo.clearTaskByUserId(id);
+const clearTaskByUserId = userId => tasksRepo.clearTaskByUserId(userId);
 
 const updateTask = (params, updateInfo) =>
   tasksRepo.updateTask(params, updateInfo);
 
-const deleteTask = task => tasksRepo.deleteTask(task);
+const deleteTask = id => tasksRepo.deleteTask(id);
 
 const deleteTaskByBoard = boardId => tasksRepo.deleteTaskByBoard(boardId);
 
