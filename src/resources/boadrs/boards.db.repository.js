@@ -1,19 +1,18 @@
 const Board = require('./boards.model');
 
-const getAll = () => Board.find({}).exec();
+const getAll = () => Board.find({});
 
 const createBoard = async newBoard => {
   const board = await Board.create(newBoard);
   board.id = board._id;
-  board.save();
+  await board.save();
   return board;
 };
 
-const getBoard = id => Board.findOne({ id }).exec();
+const getBoard = id => Board.findOne({ id });
 
-const updateBoard = (id, updateInfo) =>
-  Board.updateOne({ id }, updateInfo).exec();
+const updateBoard = (id, updateInfo) => Board.updateOne({ id }, updateInfo);
 
-const deleteBoard = id => Board.deleteOne({ id }).exec();
+const deleteBoard = id => Board.deleteOne({ id });
 
 module.exports = { getAll, createBoard, getBoard, updateBoard, deleteBoard };

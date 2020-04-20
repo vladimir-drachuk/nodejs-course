@@ -1,20 +1,20 @@
 const Task = require('../tasks/tasks.model');
 
-const getAll = () => Task.find({}).exec();
+const getAll = () => Task.find({});
 
-const getAllById = id => Task.find({ boardId: id }).exec();
+const getAllById = id => Task.find({ boardId: id });
 
 const createTask = async (id, newTask) => {
   const task = await Task.create(Object.assign(newTask, { boardId: id }));
   task.id = task._id;
-  task.save();
+  await task.save();
   return task;
 };
 
-const getTaskById = id => Task.findOne({ id }).exec();
+const getTaskById = id => Task.findOne({ id });
 
 const clearTaskByUserId = userId =>
-  Task.updateMany({ userId }, { userId: null }).exec();
+  Task.updateMany({ userId }, { userId: null });
 
 const updateTask = async (params, updateInfo) =>
   Task.updateOne(
@@ -25,7 +25,7 @@ const updateTask = async (params, updateInfo) =>
     })
   ).exec();
 
-const deleteTask = id => Task.deleteOne({ id }).exec();
+const deleteTask = id => Task.deleteOne({ id });
 
 const deleteTaskByBoard = boardId => Task.deleteMany({ boardId });
 

@@ -8,7 +8,7 @@ router
   .route('/')
   .get(async (req, res) => {
     const users = await usersService.getAll();
-    await res.json(users.map(User.toResponse)); //
+    res.json(users.map(User.toResponse));
   })
   .post(async (req, res) => {
     if (!req.body.name || !req.body.login || !req.body.password) {
@@ -16,7 +16,7 @@ router
       return;
     }
     const user = await usersService.createUser(req.body);
-    await res.json(User.toResponse(user)); //
+    res.json(User.toResponse(user));
   });
 
 router
@@ -32,9 +32,11 @@ router
   .put(async (req, res) => {
     const user = await usersService.getUser(req.params.id);
     if (user) {
-      await res.json(
-        User.toResponse(usersService.updateUser(req.params.id, req.body)) //
+      const updatedUser = await usersService.updateUser(
+        req.params.id,
+        req.body
       );
+      res.json(User.toResponse(updatedUser));
     } else {
       errorHandler(res, NOT_FOUND, 'no users with this ID');
     }
@@ -43,7 +45,7 @@ router
     const user = await usersService.getUser(req.params.id);
     if (user) {
       await usersService.deleteUser(req.params.id);
-      await res.json('The user has been deleted'); //
+      res.json('The user has been deleted');
     } else {
       errorHandler(res, NOT_FOUND, 'no users with this ID');
     }

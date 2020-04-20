@@ -6,7 +6,6 @@ const userSchema = new mongoose.Schema(
     name: String,
     login: String,
     password: String,
-    id: String,
     _id: {
       type: String,
       default: uuid
