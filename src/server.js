@@ -3,6 +3,7 @@ const { PORT } = require('./common/config');
 const app = require('./app');
 const { rejectLog, uncaughtLog } = require('./common/logger');
 const mongoose = require('mongoose');
+const createAdmin = require('./resources/users/user.mockdata');
 
 process.on('uncaughtException', err => {
   uncaughtLog(err);
@@ -20,6 +21,7 @@ mongoose.connect(process.env.MONGO_CONNECTION_STRING, {
 const db = mongoose.connection.once('open', () => {
   console.log('Data base connected');
   db.dropDatabase();
+  createAdmin();
 
   app.listen(PORT, () =>
     console.log(`App is running on http://localhost:${PORT}`)

@@ -16,6 +16,7 @@ router
       return;
     }
     const user = await usersService.createUser(req.body);
+    usersService.isPasswordTrue(user.password);
     res.json(User.toResponse(user));
   });
 

@@ -5,6 +5,7 @@ const path = require('path');
 const YAML = require('yamljs');
 const userRouter = require('./resources/users/user.router');
 const boardsRouter = require('./resources/boadrs/boards.router');
+const loginRouter = require('./resources/login/login.router');
 const { requestLog } = require('./common/logger');
 const {
   ErrorHandler,
@@ -33,8 +34,8 @@ app.use('/', (req, res, next) => {
 });
 
 app.use('/users', userRouter);
-
 app.use('/boards', boardsRouter);
+app.use('/login', loginRouter);
 
 app.use((err, req, res, next) => {
   handleInternalErr(err, res);
