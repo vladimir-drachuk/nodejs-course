@@ -7,6 +7,7 @@ const userRouter = require('./resources/users/user.router');
 const boardsRouter = require('./resources/boadrs/boards.router');
 const loginRouter = require('./resources/login/login.router');
 const { requestLog } = require('./common/logger');
+const { checkAuthorization } = require('./common/checkAuthorization');
 const {
   ErrorHandler,
   handleError,
@@ -33,8 +34,8 @@ app.use('/', (req, res, next) => {
   next();
 });
 
-app.use('/users', userRouter);
-app.use('/boards', boardsRouter);
+app.use('/users', checkAuthorization, userRouter);
+app.use('/boards', checkAuthorization, boardsRouter);
 app.use('/login', loginRouter);
 
 app.use((err, req, res, next) => {

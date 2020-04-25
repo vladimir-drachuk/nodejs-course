@@ -1,5 +1,5 @@
 /* eslint-disable no-process-exit */
-const { PORT } = require('./common/config');
+const { PORT, MONGO_CONNECTION_STRING } = require('./common/config');
 const app = require('./app');
 const { rejectLog, uncaughtLog } = require('./common/logger');
 const mongoose = require('mongoose');
@@ -13,7 +13,7 @@ process.on('unhandledRejection', (reason, promise) => {
   rejectLog(reason, promise);
 });
 
-mongoose.connect(process.env.MONGO_CONNECTION_STRING, {
+mongoose.connect(MONGO_CONNECTION_STRING, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });

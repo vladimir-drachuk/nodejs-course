@@ -12,7 +12,7 @@ router.route('/').post(async (req, res) => {
   );
   if (isValid) {
     const token = loginService.getToken(user._id, user.login);
-    res.send(token);
+    res.header('Authorization', token).send({ token });
   } else {
     errorHandler(res, LOCKED, 'User not autorised');
   }
