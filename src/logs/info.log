@@ -360,3 +360,1692 @@ info: DELETE request:
       query params: {} 
       request body: {}
 error: user not authorized: 401 {"service":"user-service"}
+info: POST request:
+      url: /login 
+      query params: {} 
+      request body: {"login":"admin","password":"admin"}
+info: POST request:
+      url: /login 
+      query params: {} 
+      request body: {"login":"admin","password":"admin"}
+info: POST request:
+      url: /login 
+      query params: {} 
+      request body: {"login":"admin","password":"admin"}
+info: POST request:
+      url: /boards 
+      query params: {} 
+      request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+info: GET request:
+      url: /users 
+      query params: {} 
+      request body: {}
+info: POST request:
+      url: /boards 
+      query params: {} 
+      request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+info: POST request:
+      url: /users 
+      query params: {} 
+      request body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+info: GET request:
+      url: /boards 
+      query params: {} 
+      request body: {}
+info: POST request:
+      url: /boards/3e995bea-bebc-4887-b537-9ce319062aa9/tasks 
+      query params: {} 
+      request body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+info: GET request:
+      url: /boards 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/0cc64753-7b99-4d3e-a5f7-faee12d5bb6a 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /users/d5011302-dc6d-49b9-be53-3fcec0f87735 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/3e995bea-bebc-4887-b537-9ce319062aa9/tasks 
+      query params: {} 
+      request body: {}
+info: POST request:
+      url: /boards 
+      query params: {} 
+      request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+info: DELETE request:
+      url: /users/d5011302-dc6d-49b9-be53-3fcec0f87735 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/3e995bea-bebc-4887-b537-9ce319062aa9/tasks 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/3e995bea-bebc-4887-b537-9ce319062aa9/tasks/97f2c965-5148-47c4-9348-5d79ed53c8dc 
+      query params: {} 
+      request body: {}
+info: DELETE request:
+      url: /boards/302c4db3-fbf5-4e0a-8c3f-806437b62869 
+      query params: {} 
+      request body: {}
+info: POST request:
+      url: /users 
+      query params: {} 
+      request body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+info: POST request:
+      url: /boards/3e995bea-bebc-4887-b537-9ce319062aa9/tasks 
+      query params: {} 
+      request body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+info: POST request:
+      url: /boards 
+      query params: {} 
+      request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+info: DELETE request:
+      url: /boards/3e995bea-bebc-4887-b537-9ce319062aa9/tasks/2a298c84-ff8f-402e-bfcc-02c3b5d4d3da 
+      query params: {} 
+      request body: {}
+info: PUT request:
+      url: /boards/92c94355-e1f7-4e2d-bfc6-4968d2ce82b8 
+      query params: {} 
+      request body: {"columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}],"title":"Autotest updated board","_id":"92c94355-e1f7-4e2d-bfc6-4968d2ce82b8","id":"92c94355-e1f7-4e2d-bfc6-4968d2ce82b8"}
+info: DELETE request:
+      url: /users/3d224272-5fe0-4b50-b2f9-78bba690abba 
+      query params: {} 
+      request body: {}
+info: POST request:
+      url: /boards/3e995bea-bebc-4887-b537-9ce319062aa9/tasks 
+      query params: {} 
+      request body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+info: GET request:
+      url: /boards/92c94355-e1f7-4e2d-bfc6-4968d2ce82b8 
+      query params: {} 
+      request body: {}
+info: PUT request:
+      url: /boards/3e995bea-bebc-4887-b537-9ce319062aa9/tasks/cf8efb62-238e-4de9-bdd1-15cf2f573191 
+      query params: {} 
+      request body: {"userId":null,"boardId":"3e995bea-bebc-4887-b537-9ce319062aa9","columnId":null,"title":"Autotest updated task","order":0,"description":"Lorem ipsum","_id":"cf8efb62-238e-4de9-bdd1-15cf2f573191","id":"cf8efb62-238e-4de9-bdd1-15cf2f573191"}
+info: POST request:
+      url: /users 
+      query params: {} 
+      request body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+info: DELETE request:
+      url: /boards/92c94355-e1f7-4e2d-bfc6-4968d2ce82b8 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/3e995bea-bebc-4887-b537-9ce319062aa9/tasks/cf8efb62-238e-4de9-bdd1-15cf2f573191 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/3e995bea-bebc-4887-b537-9ce319062aa9/tasks/97f2c965-5148-47c4-9348-5d79ed53c8dc 
+      query params: {} 
+      request body: {}
+info: POST request:
+      url: /boards 
+      query params: {} 
+      request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+info: DELETE request:
+      url: /boards/3e995bea-bebc-4887-b537-9ce319062aa9/tasks/97f2c965-5148-47c4-9348-5d79ed53c8dc 
+      query params: {} 
+      request body: {}
+info: PUT request:
+      url: /users/d6ead7c9-7219-4f28-a7d0-4ea56a8d4b02 
+      query params: {} 
+      request body: {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"d6ead7c9-7219-4f28-a7d0-4ea56a8d4b02"}
+info: GET request:
+      url: /boards/3e995bea-bebc-4887-b537-9ce319062aa9/tasks/97f2c965-5148-47c4-9348-5d79ed53c8dc 
+      query params: {} 
+      request body: {}
+info: DELETE request:
+      url: /boards/5119cb81-171a-4080-9227-9c3276782eff 
+      query params: {} 
+      request body: {}
+info: DELETE request:
+      url: /boards/3e995bea-bebc-4887-b537-9ce319062aa9 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /users/d6ead7c9-7219-4f28-a7d0-4ea56a8d4b02 
+      query params: {} 
+      request body: {}
+info: DELETE request:
+      url: /users/d6ead7c9-7219-4f28-a7d0-4ea56a8d4b02 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/5119cb81-171a-4080-9227-9c3276782eff 
+      query params: {} 
+      request body: {}
+error: no boards with this ID: 404 {"service":"user-service"}
+info: POST request:
+      url: /boards 
+      query params: {} 
+      request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+info: POST request:
+      url: /users 
+      query params: {} 
+      request body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+info: POST request:
+      url: /boards/6f1ac122-83e7-4299-847b-93446e73c2fc/tasks 
+      query params: {} 
+      request body: {"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"6f1ac122-83e7-4299-847b-93446e73c2fc","userId":null,"columnId":null}
+info: POST request:
+      url: /boards/6f1ac122-83e7-4299-847b-93446e73c2fc/tasks 
+      query params: {} 
+      request body: {"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"6f1ac122-83e7-4299-847b-93446e73c2fc","userId":null,"columnId":null}
+info: POST request:
+      url: /boards/6f1ac122-83e7-4299-847b-93446e73c2fc/tasks 
+      query params: {} 
+      request body: {"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"6f1ac122-83e7-4299-847b-93446e73c2fc","userId":null,"columnId":null}
+info: POST request:
+      url: /boards/6f1ac122-83e7-4299-847b-93446e73c2fc/tasks 
+      query params: {} 
+      request body: {"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"6f1ac122-83e7-4299-847b-93446e73c2fc","userId":null,"columnId":null}
+info: POST request:
+      url: /boards/6f1ac122-83e7-4299-847b-93446e73c2fc/tasks 
+      query params: {} 
+      request body: {"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"6f1ac122-83e7-4299-847b-93446e73c2fc","userId":null,"columnId":null}
+info: DELETE request:
+      url: /users/748acdb3-39e6-4255-b638-68703da1d31d 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/6f1ac122-83e7-4299-847b-93446e73c2fc/tasks/b7f34718-380b-433e-a6d1-206176870cfe 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/6f1ac122-83e7-4299-847b-93446e73c2fc/tasks/0b55ba08-cc5e-4551-827f-80955bbd7688 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/6f1ac122-83e7-4299-847b-93446e73c2fc/tasks/8db078ec-d072-4149-8230-72744305cc27 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/6f1ac122-83e7-4299-847b-93446e73c2fc/tasks/43ba90da-c5b4-4657-8455-6434f9d455d9 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/6f1ac122-83e7-4299-847b-93446e73c2fc/tasks/a9dbc3b6-77d4-42a4-9bd8-e618b667cf88 
+      query params: {} 
+      request body: {}
+info: DELETE request:
+      url: /boards/6f1ac122-83e7-4299-847b-93446e73c2fc 
+      query params: {} 
+      request body: {}
+info: POST request:
+      url: /users 
+      query params: {} 
+      request body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+info: GET request:
+      url: /boards/6f1ac122-83e7-4299-847b-93446e73c2fc/tasks/b7f34718-380b-433e-a6d1-206176870cfe 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/6f1ac122-83e7-4299-847b-93446e73c2fc/tasks/0b55ba08-cc5e-4551-827f-80955bbd7688 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/6f1ac122-83e7-4299-847b-93446e73c2fc/tasks/8db078ec-d072-4149-8230-72744305cc27 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/6f1ac122-83e7-4299-847b-93446e73c2fc/tasks/43ba90da-c5b4-4657-8455-6434f9d455d9 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/6f1ac122-83e7-4299-847b-93446e73c2fc/tasks/a9dbc3b6-77d4-42a4-9bd8-e618b667cf88 
+      query params: {} 
+      request body: {}
+error: no tasks with this ID: 404 {"service":"user-service"}
+error: no tasks with this ID: 404 {"service":"user-service"}
+error: no tasks with this ID: 404 {"service":"user-service"}
+error: no tasks with this ID: 404 {"service":"user-service"}
+error: no tasks with this ID: 404 {"service":"user-service"}
+info: DELETE request:
+      url: /boards/0cc64753-7b99-4d3e-a5f7-faee12d5bb6a 
+      query params: {} 
+      request body: {}
+info: POST request:
+      url: /boards 
+      query params: {} 
+      request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+info: POST request:
+      url: /boards/0f41d02d-ac18-46c7-9d7a-ae352dc09301/tasks 
+      query params: {} 
+      request body: {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"68bc1943-d1ed-4bc4-af10-ffbc95429073","boardId":"0f41d02d-ac18-46c7-9d7a-ae352dc09301"}
+info: POST request:
+      url: /boards/0f41d02d-ac18-46c7-9d7a-ae352dc09301/tasks 
+      query params: {} 
+      request body: {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"68bc1943-d1ed-4bc4-af10-ffbc95429073","boardId":"0f41d02d-ac18-46c7-9d7a-ae352dc09301"}
+info: DELETE request:
+      url: /users/68bc1943-d1ed-4bc4-af10-ffbc95429073 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/0f41d02d-ac18-46c7-9d7a-ae352dc09301/tasks/4e5d68c1-341e-42de-a210-63f58e8fbe44 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/0f41d02d-ac18-46c7-9d7a-ae352dc09301/tasks/6cce5b35-e2b4-47dd-9c5c-13974953ed59 
+      query params: {} 
+      request body: {}
+info: DELETE request:
+      url: /boards/0f41d02d-ac18-46c7-9d7a-ae352dc09301/tasks/4e5d68c1-341e-42de-a210-63f58e8fbe44 
+      query params: {} 
+      request body: {}
+info: DELETE request:
+      url: /boards/0f41d02d-ac18-46c7-9d7a-ae352dc09301/tasks/6cce5b35-e2b4-47dd-9c5c-13974953ed59 
+      query params: {} 
+      request body: {}
+info: DELETE request:
+      url: /boards/0f41d02d-ac18-46c7-9d7a-ae352dc09301 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /users 
+      query params: {} 
+      request body: {}
+error: user not authorized: 401 {"service":"user-service"}
+info: GET request:
+      url: /users/123 
+      query params: {} 
+      request body: {}
+error: user not authorized: 401 {"service":"user-service"}
+info: POST request:
+      url: /users 
+      query params: {} 
+      request body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+error: user not authorized: 401 {"service":"user-service"}
+info: PUT request:
+      url: /users/12345 
+      query params: {} 
+      request body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+error: user not authorized: 401 {"service":"user-service"}
+info: DELETE request:
+      url: /users/12345 
+      query params: {} 
+      request body: {}
+error: user not authorized: 401 {"service":"user-service"}
+info: GET request:
+      url: /boards/12345/tasks 
+      query params: {} 
+      request body: {}
+error: user not authorized: 401 {"service":"user-service"}
+info: GET request:
+      url: /boards/12345/tasks/12345 
+      query params: {} 
+      request body: {}
+error: user not authorized: 401 {"service":"user-service"}
+info: POST request:
+      url: /boards/12345/tasks 
+      query params: {} 
+      request body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+error: user not authorized: 401 {"service":"user-service"}
+info: PUT request:
+      url: /boards/12345/tasks/12345 
+      query params: {} 
+      request body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+error: user not authorized: 401 {"service":"user-service"}
+info: DELETE request:
+      url: /boards/12345/tasks/12345 
+      query params: {} 
+      request body: {}
+error: user not authorized: 401 {"service":"user-service"}
+info: GET request:
+      url: /boards 
+      query params: {} 
+      request body: {}
+error: user not authorized: 401 {"service":"user-service"}
+info: GET request:
+      url: /boards/12345 
+      query params: {} 
+      request body: {}
+error: user not authorized: 401 {"service":"user-service"}
+info: POST request:
+      url: /boards 
+      query params: {} 
+      request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+error: user not authorized: 401 {"service":"user-service"}
+info: PUT request:
+      url: /boards/12345 
+      query params: {} 
+      request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+error: user not authorized: 401 {"service":"user-service"}
+info: DELETE request:
+      url: /boards/12345 
+      query params: {} 
+      request body: {}
+error: user not authorized: 401 {"service":"user-service"}
+info: POST request:
+      url: /login 
+      query params: {} 
+      request body: {"login":"admin","password":"admin"}
+info: POST request:
+      url: /login 
+      query params: {} 
+      request body: {"login":"admin","password":"admin"}
+info: POST request:
+      url: /login 
+      query params: {} 
+      request body: {"login":"admin","password":"admin"}
+info: POST request:
+      url: /boards 
+      query params: {} 
+      request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+info: GET request:
+      url: /users 
+      query params: {} 
+      request body: {}
+info: POST request:
+      url: /users 
+      query params: {} 
+      request body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+info: POST request:
+      url: /boards 
+      query params: {} 
+      request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+info: POST request:
+      url: /boards/4b2b2374-7289-4bc1-bf66-16284d6a99e4/tasks 
+      query params: {} 
+      request body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+info: GET request:
+      url: /boards 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /users/d258c632-c06b-4c10-beb7-0c6d3eba51e2 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/4b2b2374-7289-4bc1-bf66-16284d6a99e4/tasks 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards 
+      query params: {} 
+      request body: {}
+info: DELETE request:
+      url: /users/d258c632-c06b-4c10-beb7-0c6d3eba51e2 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/4b2b2374-7289-4bc1-bf66-16284d6a99e4/tasks 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/4b2b2374-7289-4bc1-bf66-16284d6a99e4 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/4b2b2374-7289-4bc1-bf66-16284d6a99e4/tasks/902f9577-a077-407d-9e9f-94a613e377bb 
+      query params: {} 
+      request body: {}
+info: POST request:
+      url: /boards 
+      query params: {} 
+      request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+info: POST request:
+      url: /users 
+      query params: {} 
+      request body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+info: POST request:
+      url: /boards/4b2b2374-7289-4bc1-bf66-16284d6a99e4/tasks 
+      query params: {} 
+      request body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+info: DELETE request:
+      url: /boards/e06e3c90-75b9-47fe-9a4e-6af63dcf3a00 
+      query params: {} 
+      request body: {}
+info: DELETE request:
+      url: /boards/4b2b2374-7289-4bc1-bf66-16284d6a99e4/tasks/86a67fc9-d4d4-45de-9660-17cad93ffd25 
+      query params: {} 
+      request body: {}
+info: DELETE request:
+      url: /users/65265b50-37b7-4d2d-b208-280cefb8c6ad 
+      query params: {} 
+      request body: {}
+info: POST request:
+      url: /boards 
+      query params: {} 
+      request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+info: POST request:
+      url: /boards/4b2b2374-7289-4bc1-bf66-16284d6a99e4/tasks 
+      query params: {} 
+      request body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+info: POST request:
+      url: /users 
+      query params: {} 
+      request body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+info: PUT request:
+      url: /boards/7283dfe7-f480-4aa8-a9f8-8086525a155a 
+      query params: {} 
+      request body: {"columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}],"title":"Autotest updated board","_id":"7283dfe7-f480-4aa8-a9f8-8086525a155a","id":"7283dfe7-f480-4aa8-a9f8-8086525a155a"}
+info: PUT request:
+      url: /boards/4b2b2374-7289-4bc1-bf66-16284d6a99e4/tasks/96d6b5a1-8b3b-42c4-8f1e-2b62ddeecaf6 
+      query params: {} 
+      request body: {"userId":null,"boardId":"4b2b2374-7289-4bc1-bf66-16284d6a99e4","columnId":null,"title":"Autotest updated task","order":0,"description":"Lorem ipsum","_id":"96d6b5a1-8b3b-42c4-8f1e-2b62ddeecaf6","id":"96d6b5a1-8b3b-42c4-8f1e-2b62ddeecaf6"}
+info: GET request:
+      url: /boards/7283dfe7-f480-4aa8-a9f8-8086525a155a 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/4b2b2374-7289-4bc1-bf66-16284d6a99e4/tasks/96d6b5a1-8b3b-42c4-8f1e-2b62ddeecaf6 
+      query params: {} 
+      request body: {}
+info: PUT request:
+      url: /users/5ffa467a-1b79-4d39-95c5-a19117ac00d6 
+      query params: {} 
+      request body: {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"5ffa467a-1b79-4d39-95c5-a19117ac00d6"}
+info: DELETE request:
+      url: /boards/7283dfe7-f480-4aa8-a9f8-8086525a155a 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/4b2b2374-7289-4bc1-bf66-16284d6a99e4/tasks/902f9577-a077-407d-9e9f-94a613e377bb 
+      query params: {} 
+      request body: {}
+info: DELETE request:
+      url: /boards/4b2b2374-7289-4bc1-bf66-16284d6a99e4/tasks/902f9577-a077-407d-9e9f-94a613e377bb 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /users/5ffa467a-1b79-4d39-95c5-a19117ac00d6 
+      query params: {} 
+      request body: {}
+info: POST request:
+      url: /boards 
+      query params: {} 
+      request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+info: DELETE request:
+      url: /users/5ffa467a-1b79-4d39-95c5-a19117ac00d6 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/4b2b2374-7289-4bc1-bf66-16284d6a99e4/tasks/902f9577-a077-407d-9e9f-94a613e377bb 
+      query params: {} 
+      request body: {}
+info: DELETE request:
+      url: /boards/51d6b2ff-6e86-4fa7-957b-ea2eeb9d68bc 
+      query params: {} 
+      request body: {}
+error: no tasks with this ID: 404 {"service":"user-service"}
+info: DELETE request:
+      url: /boards/4b2b2374-7289-4bc1-bf66-16284d6a99e4 
+      query params: {} 
+      request body: {}
+info: POST request:
+      url: /users 
+      query params: {} 
+      request body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+info: GET request:
+      url: /boards/51d6b2ff-6e86-4fa7-957b-ea2eeb9d68bc 
+      query params: {} 
+      request body: {}
+error: no boards with this ID: 404 {"service":"user-service"}
+info: POST request:
+      url: /boards 
+      query params: {} 
+      request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+info: DELETE request:
+      url: /users/8928f80f-ea0d-4e47-98d2-ed512e5ef04b 
+      query params: {} 
+      request body: {}
+info: POST request:
+      url: /boards/9f539ec9-c3f8-47e2-8c35-7e1d60227790/tasks 
+      query params: {} 
+      request body: {"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"9f539ec9-c3f8-47e2-8c35-7e1d60227790","userId":null,"columnId":null}
+info: POST request:
+      url: /boards/9f539ec9-c3f8-47e2-8c35-7e1d60227790/tasks 
+      query params: {} 
+      request body: {"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"9f539ec9-c3f8-47e2-8c35-7e1d60227790","userId":null,"columnId":null}
+info: POST request:
+      url: /boards/9f539ec9-c3f8-47e2-8c35-7e1d60227790/tasks 
+      query params: {} 
+      request body: {"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"9f539ec9-c3f8-47e2-8c35-7e1d60227790","userId":null,"columnId":null}
+info: POST request:
+      url: /boards/9f539ec9-c3f8-47e2-8c35-7e1d60227790/tasks 
+      query params: {} 
+      request body: {"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"9f539ec9-c3f8-47e2-8c35-7e1d60227790","userId":null,"columnId":null}
+info: POST request:
+      url: /boards/9f539ec9-c3f8-47e2-8c35-7e1d60227790/tasks 
+      query params: {} 
+      request body: {"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"9f539ec9-c3f8-47e2-8c35-7e1d60227790","userId":null,"columnId":null}
+info: POST request:
+      url: /users 
+      query params: {} 
+      request body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+info: GET request:
+      url: /boards/9f539ec9-c3f8-47e2-8c35-7e1d60227790/tasks/7f7e18c0-bc6b-4d9b-9f6c-5e064807680f 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/9f539ec9-c3f8-47e2-8c35-7e1d60227790/tasks/02f817d9-d6fa-46cc-b687-7fa36fd3c113 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/9f539ec9-c3f8-47e2-8c35-7e1d60227790/tasks/e671c3d5-173e-4a88-9e0f-5f21df6f3a0a 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/9f539ec9-c3f8-47e2-8c35-7e1d60227790/tasks/bf8d0af2-0fdd-4879-8138-c73e1e88277a 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/9f539ec9-c3f8-47e2-8c35-7e1d60227790/tasks/369dc057-4f58-487e-94d5-1e2c65963d2f 
+      query params: {} 
+      request body: {}
+info: DELETE request:
+      url: /boards/9f539ec9-c3f8-47e2-8c35-7e1d60227790 
+      query params: {} 
+      request body: {}
+info: POST request:
+      url: /boards 
+      query params: {} 
+      request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+info: GET request:
+      url: /boards/9f539ec9-c3f8-47e2-8c35-7e1d60227790/tasks/7f7e18c0-bc6b-4d9b-9f6c-5e064807680f 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/9f539ec9-c3f8-47e2-8c35-7e1d60227790/tasks/02f817d9-d6fa-46cc-b687-7fa36fd3c113 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/9f539ec9-c3f8-47e2-8c35-7e1d60227790/tasks/e671c3d5-173e-4a88-9e0f-5f21df6f3a0a 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/9f539ec9-c3f8-47e2-8c35-7e1d60227790/tasks/bf8d0af2-0fdd-4879-8138-c73e1e88277a 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/9f539ec9-c3f8-47e2-8c35-7e1d60227790/tasks/369dc057-4f58-487e-94d5-1e2c65963d2f 
+      query params: {} 
+      request body: {}
+info: POST request:
+      url: /boards/66219758-703e-4a48-b5f2-c87e4e5c5095/tasks 
+      query params: {} 
+      request body: {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"4e4b2f5c-41cc-4407-a432-243364e602db","boardId":"66219758-703e-4a48-b5f2-c87e4e5c5095"}
+info: POST request:
+      url: /boards/66219758-703e-4a48-b5f2-c87e4e5c5095/tasks 
+      query params: {} 
+      request body: {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"4e4b2f5c-41cc-4407-a432-243364e602db","boardId":"66219758-703e-4a48-b5f2-c87e4e5c5095"}
+error: no tasks with this ID: 404 {"service":"user-service"}
+error: no tasks with this ID: 404 {"service":"user-service"}
+error: no tasks with this ID: 404 {"service":"user-service"}
+error: no tasks with this ID: 404 {"service":"user-service"}
+error: no tasks with this ID: 404 {"service":"user-service"}
+info: DELETE request:
+      url: /boards/f7ebba47-b0f1-4a31-bcc5-e9ec4ef7b4c7 
+      query params: {} 
+      request body: {}
+info: DELETE request:
+      url: /users/4e4b2f5c-41cc-4407-a432-243364e602db 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /users 
+      query params: {} 
+      request body: {}
+error: user not authorized: 401 {"service":"user-service"}
+info: GET request:
+      url: /users/123 
+      query params: {} 
+      request body: {}
+error: user not authorized: 401 {"service":"user-service"}
+info: POST request:
+      url: /users 
+      query params: {} 
+      request body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+error: user not authorized: 401 {"service":"user-service"}
+info: PUT request:
+      url: /users/12345 
+      query params: {} 
+      request body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+error: user not authorized: 401 {"service":"user-service"}
+info: DELETE request:
+      url: /users/12345 
+      query params: {} 
+      request body: {}
+error: user not authorized: 401 {"service":"user-service"}
+info: GET request:
+      url: /boards/66219758-703e-4a48-b5f2-c87e4e5c5095/tasks/dd64c430-d70e-4c64-a6be-5941575e7938 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/66219758-703e-4a48-b5f2-c87e4e5c5095/tasks/1243e776-dfad-4d62-bc37-3fdfdbd9decd 
+      query params: {} 
+      request body: {}
+info: DELETE request:
+      url: /boards/66219758-703e-4a48-b5f2-c87e4e5c5095/tasks/1243e776-dfad-4d62-bc37-3fdfdbd9decd 
+      query params: {} 
+      request body: {}
+info: DELETE request:
+      url: /boards/66219758-703e-4a48-b5f2-c87e4e5c5095/tasks/dd64c430-d70e-4c64-a6be-5941575e7938 
+      query params: {} 
+      request body: {}
+info: DELETE request:
+      url: /boards/66219758-703e-4a48-b5f2-c87e4e5c5095 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/12345/tasks 
+      query params: {} 
+      request body: {}
+error: user not authorized: 401 {"service":"user-service"}
+info: GET request:
+      url: /boards/12345/tasks/12345 
+      query params: {} 
+      request body: {}
+error: user not authorized: 401 {"service":"user-service"}
+info: POST request:
+      url: /boards/12345/tasks 
+      query params: {} 
+      request body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+error: user not authorized: 401 {"service":"user-service"}
+info: PUT request:
+      url: /boards/12345/tasks/12345 
+      query params: {} 
+      request body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+error: user not authorized: 401 {"service":"user-service"}
+info: DELETE request:
+      url: /boards/12345/tasks/12345 
+      query params: {} 
+      request body: {}
+error: user not authorized: 401 {"service":"user-service"}
+info: GET request:
+      url: /boards 
+      query params: {} 
+      request body: {}
+error: user not authorized: 401 {"service":"user-service"}
+info: GET request:
+      url: /boards/12345 
+      query params: {} 
+      request body: {}
+error: user not authorized: 401 {"service":"user-service"}
+info: POST request:
+      url: /boards 
+      query params: {} 
+      request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+error: user not authorized: 401 {"service":"user-service"}
+info: PUT request:
+      url: /boards/12345 
+      query params: {} 
+      request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+error: user not authorized: 401 {"service":"user-service"}
+info: DELETE request:
+      url: /boards/12345 
+      query params: {} 
+      request body: {}
+error: user not authorized: 401 {"service":"user-service"}
+info: GET request:
+      url: /login 
+      query params: {} 
+      request body: {"login":"admin","password":"admin"}
+info: POST request:
+      url: /login 
+      query params: {} 
+      request body: {"login":"admin","password":"admin"}
+info: POST request:
+      url: /login 
+      query params: {} 
+      request body: {"login":"admin1","password":"admin"}
+error: user not authodized: 403 {"service":"user-service"}
+error: user not authorized: 401 {"service":"user-service"}
+error: user not authorized: 401 {"service":"user-service"}
+info: POST request:
+      url: /login 
+      query params: {} 
+      request body: {"login":"admin","password":"admin"}
+error: user not authorized: 401 {"service":"user-service"}
+error: user not authorized: 401 {"service":"user-service"}
+error: user not authorized: 401 {"service":"user-service"}
+info: GET request:
+      url: /swagger-ui.css 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /swagger-ui-bundle.js 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /swagger-ui-standalone-preset.js 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /swagger-ui-init.js 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /favicon-32x32.png 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /favicon-16x16.png 
+      query params: {} 
+      request body: {}
+info: POST request:
+      url: /login 
+      query params: {} 
+      request body: {}
+error: user not authorized: 403 {"service":"user-service"}
+info: POST request:
+      url: /login 
+      query params: {} 
+      request body: {}
+error: user not authorized: 403 {"service":"user-service"}
+info: POST request:
+      url: /login 
+      query params: {} 
+      request body: {}
+error: user not authorized: 403 {"service":"user-service"}
+info: POST request:
+      url: /login 
+      query params: {} 
+      request body: {}
+error: user not authorized: 403 {"service":"user-service"}
+info: POST request:
+      url: /login 
+      query params: {} 
+      request body: {}
+error: user not authorized: 403 {"service":"user-service"}
+info: POST request:
+      url: /login 
+      query params: {} 
+      request body: {}
+error: user not authorized: 403 {"service":"user-service"}
+info: POST request:
+      url: /login 
+      query params: {} 
+      request body: {}
+error: user not authorized: 403 {"service":"user-service"}
+info: POST request:
+      url: /login 
+      query params: {} 
+      request body: {}
+error: user not authorized: 403 {"service":"user-service"}
+info: OPTIONS request:
+      url: /login 
+      query params: {} 
+      request body: {}
+info: OPTIONS request:
+      url: /login 
+      query params: {} 
+      request body: {}
+info: OPTIONS request:
+      url: /login 
+      query params: {} 
+      request body: {}
+info: OPTIONS request:
+      url: /login 
+      query params: {} 
+      request body: {}
+info: OPTIONS request:
+      url: /login 
+      query params: {} 
+      request body: {}
+info: POST request:
+      url: /login 
+      query params: {} 
+      request body: {}
+error: user not authorized: 403 {"service":"user-service"}
+info: GET request:
+      url: /users 
+      query params: {} 
+      request body: {}
+error: user not authorized: 401 {"service":"user-service"}
+info: GET request:
+      url: /login 
+      query params: {} 
+      request body: {}
+info: OPTIONS request:
+      url: /login 
+      query params: {} 
+      request body: {}
+info: OPTIONS request:
+      url: /login 
+      query params: {} 
+      request body: {}
+info: OPTIONS request:
+      url: /login 
+      query params: {} 
+      request body: {}
+info: POST request:
+      url: /login 
+      query params: {} 
+      request body: {}
+error: user not authorized: 403 {"service":"user-service"}
+info: POST request:
+      url: /login 
+      query params: {} 
+      request body: {"login":"admin","password":"admin"}
+info: POST request:
+      url: /login 
+      query params: {} 
+      request body: {"login":"admin","password":"admin"}
+info: POST request:
+      url: /login 
+      query params: {} 
+      request body: {"login":"admin","password":"admin"}
+info: POST request:
+      url: /boards 
+      query params: {} 
+      request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+info: POST request:
+      url: /boards 
+      query params: {} 
+      request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+info: GET request:
+      url: /users 
+      query params: {} 
+      request body: {}
+info: POST request:
+      url: /boards/8dbad0de-383e-434a-9066-9b69061b46ff/tasks 
+      query params: {} 
+      request body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+info: POST request:
+      url: /users 
+      query params: {} 
+      request body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+info: GET request:
+      url: /boards 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/8dbad0de-383e-434a-9066-9b69061b46ff/tasks 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/8dbad0de-383e-434a-9066-9b69061b46ff 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/8dbad0de-383e-434a-9066-9b69061b46ff/tasks 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /users/4464d14f-6e56-4172-bbfd-6c4bdd4df12f 
+      query params: {} 
+      request body: {}
+info: POST request:
+      url: /boards 
+      query params: {} 
+      request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+info: GET request:
+      url: /boards/8dbad0de-383e-434a-9066-9b69061b46ff/tasks/5a0be47a-0f54-47f9-83aa-46879ee9ba79 
+      query params: {} 
+      request body: {}
+info: DELETE request:
+      url: /users/4464d14f-6e56-4172-bbfd-6c4bdd4df12f 
+      query params: {} 
+      request body: {}
+info: POST request:
+      url: /boards/8dbad0de-383e-434a-9066-9b69061b46ff/tasks 
+      query params: {} 
+      request body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+info: DELETE request:
+      url: /boards/8d0b9438-a53d-404d-acee-21112bfcf548 
+      query params: {} 
+      request body: {}
+info: POST request:
+      url: /users 
+      query params: {} 
+      request body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+info: DELETE request:
+      url: /boards/8dbad0de-383e-434a-9066-9b69061b46ff/tasks/bbe734cc-05d5-453e-b75e-c23fc2ff06a6 
+      query params: {} 
+      request body: {}
+info: POST request:
+      url: /boards 
+      query params: {} 
+      request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+info: POST request:
+      url: /boards/8dbad0de-383e-434a-9066-9b69061b46ff/tasks 
+      query params: {} 
+      request body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+info: PUT request:
+      url: /boards/12c51d53-e241-4c20-a85b-765165b853d8 
+      query params: {} 
+      request body: {"columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}],"title":"Autotest updated board","_id":"12c51d53-e241-4c20-a85b-765165b853d8","id":"12c51d53-e241-4c20-a85b-765165b853d8"}
+info: DELETE request:
+      url: /users/fa9fbe2e-fbaa-4340-970f-d314e45d96e5 
+      query params: {} 
+      request body: {}
+info: PUT request:
+      url: /boards/8dbad0de-383e-434a-9066-9b69061b46ff/tasks/20bc617a-8c88-4a39-bec4-d5a13d11575b 
+      query params: {} 
+      request body: {"userId":null,"boardId":"8dbad0de-383e-434a-9066-9b69061b46ff","columnId":null,"title":"Autotest updated task","order":0,"description":"Lorem ipsum","_id":"20bc617a-8c88-4a39-bec4-d5a13d11575b","id":"20bc617a-8c88-4a39-bec4-d5a13d11575b"}
+info: GET request:
+      url: /boards/12c51d53-e241-4c20-a85b-765165b853d8 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/8dbad0de-383e-434a-9066-9b69061b46ff/tasks/20bc617a-8c88-4a39-bec4-d5a13d11575b 
+      query params: {} 
+      request body: {}
+info: POST request:
+      url: /users 
+      query params: {} 
+      request body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+info: DELETE request:
+      url: /boards/12c51d53-e241-4c20-a85b-765165b853d8 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/8dbad0de-383e-434a-9066-9b69061b46ff/tasks/5a0be47a-0f54-47f9-83aa-46879ee9ba79 
+      query params: {} 
+      request body: {}
+info: DELETE request:
+      url: /boards/8dbad0de-383e-434a-9066-9b69061b46ff/tasks/5a0be47a-0f54-47f9-83aa-46879ee9ba79 
+      query params: {} 
+      request body: {}
+info: POST request:
+      url: /boards 
+      query params: {} 
+      request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+info: PUT request:
+      url: /users/dfaa8937-51ba-4039-b2b6-ac05d17004db 
+      query params: {} 
+      request body: {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"dfaa8937-51ba-4039-b2b6-ac05d17004db"}
+info: GET request:
+      url: /boards/8dbad0de-383e-434a-9066-9b69061b46ff/tasks/5a0be47a-0f54-47f9-83aa-46879ee9ba79 
+      query params: {} 
+      request body: {}
+info: DELETE request:
+      url: /boards/2e1064e8-511b-46f7-ab38-6af69c4f9a6d 
+      query params: {} 
+      request body: {}
+error: no tasks with this ID: 404 {"service":"user-service"}
+info: DELETE request:
+      url: /boards/8dbad0de-383e-434a-9066-9b69061b46ff 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /users/dfaa8937-51ba-4039-b2b6-ac05d17004db 
+      query params: {} 
+      request body: {}
+info: DELETE request:
+      url: /users/dfaa8937-51ba-4039-b2b6-ac05d17004db 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/2e1064e8-511b-46f7-ab38-6af69c4f9a6d 
+      query params: {} 
+      request body: {}
+error: no boards with this ID: 404 {"service":"user-service"}
+info: POST request:
+      url: /boards 
+      query params: {} 
+      request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+info: POST request:
+      url: /users 
+      query params: {} 
+      request body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+info: POST request:
+      url: /boards/569ccc0f-62a1-4a5f-b87a-fb479d5dc7f7/tasks 
+      query params: {} 
+      request body: {"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"569ccc0f-62a1-4a5f-b87a-fb479d5dc7f7","userId":null,"columnId":null}
+info: POST request:
+      url: /boards/569ccc0f-62a1-4a5f-b87a-fb479d5dc7f7/tasks 
+      query params: {} 
+      request body: {"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"569ccc0f-62a1-4a5f-b87a-fb479d5dc7f7","userId":null,"columnId":null}
+info: POST request:
+      url: /boards/569ccc0f-62a1-4a5f-b87a-fb479d5dc7f7/tasks 
+      query params: {} 
+      request body: {"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"569ccc0f-62a1-4a5f-b87a-fb479d5dc7f7","userId":null,"columnId":null}
+info: POST request:
+      url: /boards/569ccc0f-62a1-4a5f-b87a-fb479d5dc7f7/tasks 
+      query params: {} 
+      request body: {"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"569ccc0f-62a1-4a5f-b87a-fb479d5dc7f7","userId":null,"columnId":null}
+info: POST request:
+      url: /boards/569ccc0f-62a1-4a5f-b87a-fb479d5dc7f7/tasks 
+      query params: {} 
+      request body: {"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"569ccc0f-62a1-4a5f-b87a-fb479d5dc7f7","userId":null,"columnId":null}
+info: DELETE request:
+      url: /users/bd5b6413-68b7-4f0f-a9d7-6f5c9bc05a1c 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/569ccc0f-62a1-4a5f-b87a-fb479d5dc7f7/tasks/9bc10d8d-31b9-4867-834d-7e6347f928bc 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/569ccc0f-62a1-4a5f-b87a-fb479d5dc7f7/tasks/d1d460da-e24e-4199-aa5e-94f31b75da8d 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/569ccc0f-62a1-4a5f-b87a-fb479d5dc7f7/tasks/a9d7b46c-ab99-4b30-9d51-bd2e7ae6e134 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/569ccc0f-62a1-4a5f-b87a-fb479d5dc7f7/tasks/bb765300-db60-40a5-a7e3-2b58c739f030 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/569ccc0f-62a1-4a5f-b87a-fb479d5dc7f7/tasks/1158cb71-32cc-49e7-b9bb-52d56afb23fa 
+      query params: {} 
+      request body: {}
+info: DELETE request:
+      url: /boards/569ccc0f-62a1-4a5f-b87a-fb479d5dc7f7 
+      query params: {} 
+      request body: {}
+info: POST request:
+      url: /users 
+      query params: {} 
+      request body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+info: GET request:
+      url: /boards/569ccc0f-62a1-4a5f-b87a-fb479d5dc7f7/tasks/9bc10d8d-31b9-4867-834d-7e6347f928bc 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/569ccc0f-62a1-4a5f-b87a-fb479d5dc7f7/tasks/d1d460da-e24e-4199-aa5e-94f31b75da8d 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/569ccc0f-62a1-4a5f-b87a-fb479d5dc7f7/tasks/a9d7b46c-ab99-4b30-9d51-bd2e7ae6e134 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/569ccc0f-62a1-4a5f-b87a-fb479d5dc7f7/tasks/bb765300-db60-40a5-a7e3-2b58c739f030 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/569ccc0f-62a1-4a5f-b87a-fb479d5dc7f7/tasks/1158cb71-32cc-49e7-b9bb-52d56afb23fa 
+      query params: {} 
+      request body: {}
+error: no tasks with this ID: 404 {"service":"user-service"}
+error: no tasks with this ID: 404 {"service":"user-service"}
+error: no tasks with this ID: 404 {"service":"user-service"}
+error: no tasks with this ID: 404 {"service":"user-service"}
+error: no tasks with this ID: 404 {"service":"user-service"}
+info: DELETE request:
+      url: /boards/e8c48aee-4a9f-4ac1-b6bb-1558b4f0d65d 
+      query params: {} 
+      request body: {}
+info: POST request:
+      url: /boards 
+      query params: {} 
+      request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+info: POST request:
+      url: /boards/a5b1ba6a-2120-457d-90ba-229a0bc0d004/tasks 
+      query params: {} 
+      request body: {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"15ab296d-25ca-4172-bf31-18f74267792d","boardId":"a5b1ba6a-2120-457d-90ba-229a0bc0d004"}
+info: POST request:
+      url: /boards/a5b1ba6a-2120-457d-90ba-229a0bc0d004/tasks 
+      query params: {} 
+      request body: {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"15ab296d-25ca-4172-bf31-18f74267792d","boardId":"a5b1ba6a-2120-457d-90ba-229a0bc0d004"}
+info: GET request:
+      url: /boards/12345/tasks 
+      query params: {} 
+      request body: {}
+error: user not authorized: 401 {"service":"user-service"}
+info: GET request:
+      url: /boards/12345/tasks/12345 
+      query params: {} 
+      request body: {}
+error: user not authorized: 401 {"service":"user-service"}
+info: POST request:
+      url: /boards/12345/tasks 
+      query params: {} 
+      request body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+error: user not authorized: 401 {"service":"user-service"}
+info: PUT request:
+      url: /boards/12345/tasks/12345 
+      query params: {} 
+      request body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+error: user not authorized: 401 {"service":"user-service"}
+info: DELETE request:
+      url: /boards/12345/tasks/12345 
+      query params: {} 
+      request body: {}
+error: user not authorized: 401 {"service":"user-service"}
+info: DELETE request:
+      url: /users/15ab296d-25ca-4172-bf31-18f74267792d 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/a5b1ba6a-2120-457d-90ba-229a0bc0d004/tasks/06e33256-2dde-42bb-8fb5-7b9931bc9d60 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/a5b1ba6a-2120-457d-90ba-229a0bc0d004/tasks/e7032a95-e92c-4b66-a190-ca661d38b6b9 
+      query params: {} 
+      request body: {}
+info: DELETE request:
+      url: /boards/a5b1ba6a-2120-457d-90ba-229a0bc0d004/tasks/e7032a95-e92c-4b66-a190-ca661d38b6b9 
+      query params: {} 
+      request body: {}
+info: DELETE request:
+      url: /boards/a5b1ba6a-2120-457d-90ba-229a0bc0d004/tasks/06e33256-2dde-42bb-8fb5-7b9931bc9d60 
+      query params: {} 
+      request body: {}
+info: DELETE request:
+      url: /boards/a5b1ba6a-2120-457d-90ba-229a0bc0d004 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards 
+      query params: {} 
+      request body: {}
+error: user not authorized: 401 {"service":"user-service"}
+info: GET request:
+      url: /boards/12345 
+      query params: {} 
+      request body: {}
+error: user not authorized: 401 {"service":"user-service"}
+info: POST request:
+      url: /boards 
+      query params: {} 
+      request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+error: user not authorized: 401 {"service":"user-service"}
+info: PUT request:
+      url: /boards/12345 
+      query params: {} 
+      request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+error: user not authorized: 401 {"service":"user-service"}
+info: GET request:
+      url: /users 
+      query params: {} 
+      request body: {}
+error: user not authorized: 401 {"service":"user-service"}
+info: DELETE request:
+      url: /boards/12345 
+      query params: {} 
+      request body: {}
+error: user not authorized: 401 {"service":"user-service"}
+info: GET request:
+      url: /users/123 
+      query params: {} 
+      request body: {}
+error: user not authorized: 401 {"service":"user-service"}
+info: POST request:
+      url: /users 
+      query params: {} 
+      request body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+error: user not authorized: 401 {"service":"user-service"}
+info: PUT request:
+      url: /users/12345 
+      query params: {} 
+      request body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+error: user not authorized: 401 {"service":"user-service"}
+info: DELETE request:
+      url: /users/12345 
+      query params: {} 
+      request body: {}
+error: user not authorized: 401 {"service":"user-service"}
+info: POST request:
+      url: /users 
+      query params: {} 
+      request body: {"name":"string","login":"string","password":"string"}
+error: user not authorized: 401 {"service":"user-service"}
+info: OPTIONS request:
+      url: /login 
+      query params: {} 
+      request body: {}
+info: OPTIONS request:
+      url: /login 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: / 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /favicon.ico 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /users 
+      query params: {} 
+      request body: {}
+error: user not authorized: 401 {"service":"user-service"}
+info: OPTIONS request:
+      url: /login 
+      query params: {} 
+      request body: {}
+info: OPTIONS request:
+      url: /login 
+      query params: {} 
+      request body: {}
+info: OPTIONS request:
+      url: /login 
+      query params: {} 
+      request body: {}
+info: OPTIONS request:
+      url: /login 
+      query params: {} 
+      request body: {}
+info: OPTIONS request:
+      url: /login 
+      query params: {} 
+      request body: {}
+info: OPTIONS request:
+      url: /login 
+      query params: {} 
+      request body: {}
+info: OPTIONS request:
+      url: /login 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /jhfh 
+      query params: {} 
+      request body: {}
+error: user not authorized: 401 {"service":"user-service"}
+info: GET request:
+      url: /favicon.ico 
+      query params: {} 
+      request body: {}
+error: user not authorized: 401 {"service":"user-service"}
+info: GET request:
+      url: /users 
+      query params: {} 
+      request body: {}
+error: user not authorized: 401 {"service":"user-service"}
+info: GET request:
+      url: /users 
+      query params: {} 
+      request body: {}
+error: user not authorized: 401 {"service":"user-service"}
+info: GET request:
+      url: /favicon.ico 
+      query params: {} 
+      request body: {}
+error: user not authorized: 401 {"service":"user-service"}
+info: GET request:
+      url: / 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /favicon.ico 
+      query params: {} 
+      request body: {}
+error: user not authorized: 401 {"service":"user-service"}
+info: GET request:
+      url: /users 
+      query params: {} 
+      request body: {}
+error: user not authorized: 401 {"service":"user-service"}
+info: GET request:
+      url: /favicon.ico 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /usersq 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: / 
+      query params: {} 
+      request body: {}
+info: POST request:
+      url: /login 
+      query params: {} 
+      request body: {"login":"admin","password":"admin"}
+info: POST request:
+      url: /login 
+      query params: {} 
+      request body: {"login":"admin","password":"admin"}
+info: POST request:
+      url: /login 
+      query params: {} 
+      request body: {"login":"admin","password":"admin"}
+info: POST request:
+      url: /boards 
+      query params: {} 
+      request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+info: GET request:
+      url: /users 
+      query params: {} 
+      request body: {}
+info: POST request:
+      url: /boards 
+      query params: {} 
+      request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+info: POST request:
+      url: /users 
+      query params: {} 
+      request body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+info: POST request:
+      url: /boards/3fcc24c9-6262-4187-8cde-783c3692d1e9/tasks 
+      query params: {} 
+      request body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+info: GET request:
+      url: /boards 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/3fcc24c9-6262-4187-8cde-783c3692d1e9/tasks 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /users/ec978a45-876c-4cf0-be6c-ddbfabe47d07 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/3fcc24c9-6262-4187-8cde-783c3692d1e9 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/3fcc24c9-6262-4187-8cde-783c3692d1e9/tasks 
+      query params: {} 
+      request body: {}
+info: DELETE request:
+      url: /users/ec978a45-876c-4cf0-be6c-ddbfabe47d07 
+      query params: {} 
+      request body: {}
+info: POST request:
+      url: /boards 
+      query params: {} 
+      request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+info: GET request:
+      url: /boards/3fcc24c9-6262-4187-8cde-783c3692d1e9/tasks/206f5168-4395-4a77-9f7d-646417d6ce6b 
+      query params: {} 
+      request body: {}
+info: POST request:
+      url: /boards/3fcc24c9-6262-4187-8cde-783c3692d1e9/tasks 
+      query params: {} 
+      request body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+info: DELETE request:
+      url: /boards/b62d1f69-c1ed-471e-9e4d-e86f89bc7de9 
+      query params: {} 
+      request body: {}
+info: POST request:
+      url: /users 
+      query params: {} 
+      request body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+info: DELETE request:
+      url: /boards/3fcc24c9-6262-4187-8cde-783c3692d1e9/tasks/5642691a-2c86-4eb2-afbc-86a933d1beb5 
+      query params: {} 
+      request body: {}
+info: POST request:
+      url: /boards 
+      query params: {} 
+      request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+info: DELETE request:
+      url: /users/8d587dbb-cebb-4152-bcbb-1fa776b2fd1a 
+      query params: {} 
+      request body: {}
+info: POST request:
+      url: /boards/3fcc24c9-6262-4187-8cde-783c3692d1e9/tasks 
+      query params: {} 
+      request body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+info: PUT request:
+      url: /boards/e8fea803-6d53-4b83-a05a-61d645952e91 
+      query params: {} 
+      request body: {"columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}],"title":"Autotest updated board","_id":"e8fea803-6d53-4b83-a05a-61d645952e91","id":"e8fea803-6d53-4b83-a05a-61d645952e91"}
+info: PUT request:
+      url: /boards/3fcc24c9-6262-4187-8cde-783c3692d1e9/tasks/20de2e6c-d2bf-4f3a-8c5d-00f2a85fc761 
+      query params: {} 
+      request body: {"userId":null,"boardId":"3fcc24c9-6262-4187-8cde-783c3692d1e9","columnId":null,"title":"Autotest updated task","order":0,"description":"Lorem ipsum","_id":"20de2e6c-d2bf-4f3a-8c5d-00f2a85fc761","id":"20de2e6c-d2bf-4f3a-8c5d-00f2a85fc761"}
+info: POST request:
+      url: /users 
+      query params: {} 
+      request body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+info: GET request:
+      url: /boards/e8fea803-6d53-4b83-a05a-61d645952e91 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/3fcc24c9-6262-4187-8cde-783c3692d1e9/tasks/20de2e6c-d2bf-4f3a-8c5d-00f2a85fc761 
+      query params: {} 
+      request body: {}
+info: DELETE request:
+      url: /boards/e8fea803-6d53-4b83-a05a-61d645952e91 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/3fcc24c9-6262-4187-8cde-783c3692d1e9/tasks/206f5168-4395-4a77-9f7d-646417d6ce6b 
+      query params: {} 
+      request body: {}
+info: PUT request:
+      url: /users/5ecfc135-f8f9-470f-820f-8e1ab07f8501 
+      query params: {} 
+      request body: {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"5ecfc135-f8f9-470f-820f-8e1ab07f8501"}
+info: DELETE request:
+      url: /boards/3fcc24c9-6262-4187-8cde-783c3692d1e9/tasks/206f5168-4395-4a77-9f7d-646417d6ce6b 
+      query params: {} 
+      request body: {}
+info: POST request:
+      url: /boards 
+      query params: {} 
+      request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+info: GET request:
+      url: /users/5ecfc135-f8f9-470f-820f-8e1ab07f8501 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/3fcc24c9-6262-4187-8cde-783c3692d1e9/tasks/206f5168-4395-4a77-9f7d-646417d6ce6b 
+      query params: {} 
+      request body: {}
+info: DELETE request:
+      url: /boards/b2ba7b33-11e7-40fe-b01b-919a84a741b2 
+      query params: {} 
+      request body: {}
+info: DELETE request:
+      url: /users/5ecfc135-f8f9-470f-820f-8e1ab07f8501 
+      query params: {} 
+      request body: {}
+error: no tasks with this ID: 404 {"service":"user-service"}
+info: DELETE request:
+      url: /boards/3fcc24c9-6262-4187-8cde-783c3692d1e9 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/b2ba7b33-11e7-40fe-b01b-919a84a741b2 
+      query params: {} 
+      request body: {}
+info: POST request:
+      url: /users 
+      query params: {} 
+      request body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+error: no boards with this ID: 404 {"service":"user-service"}
+info: POST request:
+      url: /boards 
+      query params: {} 
+      request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+info: POST request:
+      url: /boards/35561982-9b99-4475-93e5-e7864427cd87/tasks 
+      query params: {} 
+      request body: {"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"35561982-9b99-4475-93e5-e7864427cd87","userId":null,"columnId":null}
+info: POST request:
+      url: /boards/35561982-9b99-4475-93e5-e7864427cd87/tasks 
+      query params: {} 
+      request body: {"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"35561982-9b99-4475-93e5-e7864427cd87","userId":null,"columnId":null}
+info: POST request:
+      url: /boards/35561982-9b99-4475-93e5-e7864427cd87/tasks 
+      query params: {} 
+      request body: {"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"35561982-9b99-4475-93e5-e7864427cd87","userId":null,"columnId":null}
+info: POST request:
+      url: /boards/35561982-9b99-4475-93e5-e7864427cd87/tasks 
+      query params: {} 
+      request body: {"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"35561982-9b99-4475-93e5-e7864427cd87","userId":null,"columnId":null}
+info: POST request:
+      url: /boards/35561982-9b99-4475-93e5-e7864427cd87/tasks 
+      query params: {} 
+      request body: {"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"35561982-9b99-4475-93e5-e7864427cd87","userId":null,"columnId":null}
+info: DELETE request:
+      url: /users/7e9e8aef-2b34-4314-b6e3-4c7acc5f9bae 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/35561982-9b99-4475-93e5-e7864427cd87/tasks/4be3cb54-3aec-4d04-b0d4-de5c31e13f69 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/35561982-9b99-4475-93e5-e7864427cd87/tasks/bfb807ff-a381-405e-87ea-b0fb33c29d4f 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/35561982-9b99-4475-93e5-e7864427cd87/tasks/3eac0f18-0219-40a1-af78-51142a167522 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/35561982-9b99-4475-93e5-e7864427cd87/tasks/3e20a25c-9de3-4017-8ad6-476ca3351efc 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/35561982-9b99-4475-93e5-e7864427cd87/tasks/715cc877-58bf-4dc3-b403-1c84f8e88fe9 
+      query params: {} 
+      request body: {}
+info: POST request:
+      url: /users 
+      query params: {} 
+      request body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+info: DELETE request:
+      url: /boards/35561982-9b99-4475-93e5-e7864427cd87 
+      query params: {} 
+      request body: {}
+info: POST request:
+      url: /boards 
+      query params: {} 
+      request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+info: GET request:
+      url: /boards/35561982-9b99-4475-93e5-e7864427cd87/tasks/4be3cb54-3aec-4d04-b0d4-de5c31e13f69 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/35561982-9b99-4475-93e5-e7864427cd87/tasks/bfb807ff-a381-405e-87ea-b0fb33c29d4f 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/35561982-9b99-4475-93e5-e7864427cd87/tasks/3eac0f18-0219-40a1-af78-51142a167522 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/35561982-9b99-4475-93e5-e7864427cd87/tasks/3e20a25c-9de3-4017-8ad6-476ca3351efc 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/35561982-9b99-4475-93e5-e7864427cd87/tasks/715cc877-58bf-4dc3-b403-1c84f8e88fe9 
+      query params: {} 
+      request body: {}
+error: no tasks with this ID: 404 {"service":"user-service"}
+error: no tasks with this ID: 404 {"service":"user-service"}
+error: no tasks with this ID: 404 {"service":"user-service"}
+error: no tasks with this ID: 404 {"service":"user-service"}
+error: no tasks with this ID: 404 {"service":"user-service"}
+info: POST request:
+      url: /boards/eb8d883e-7494-4035-aa99-bacbd78c0245/tasks 
+      query params: {} 
+      request body: {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"c6df741a-117c-4650-8c0a-1d1b36f58b12","boardId":"eb8d883e-7494-4035-aa99-bacbd78c0245"}
+info: POST request:
+      url: /boards/eb8d883e-7494-4035-aa99-bacbd78c0245/tasks 
+      query params: {} 
+      request body: {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"c6df741a-117c-4650-8c0a-1d1b36f58b12","boardId":"eb8d883e-7494-4035-aa99-bacbd78c0245"}
+info: DELETE request:
+      url: /boards/6acfccba-4efa-4d92-aba2-42fe6d007d9b 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards 
+      query params: {} 
+      request body: {}
+error: user not authorized: 401 {"service":"user-service"}
+info: GET request:
+      url: /boards/12345 
+      query params: {} 
+      request body: {}
+error: user not authorized: 401 {"service":"user-service"}
+info: POST request:
+      url: /boards 
+      query params: {} 
+      request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+error: user not authorized: 401 {"service":"user-service"}
+info: PUT request:
+      url: /boards/12345 
+      query params: {} 
+      request body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+error: user not authorized: 401 {"service":"user-service"}
+info: DELETE request:
+      url: /boards/12345 
+      query params: {} 
+      request body: {}
+error: user not authorized: 401 {"service":"user-service"}
+info: DELETE request:
+      url: /users/c6df741a-117c-4650-8c0a-1d1b36f58b12 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/eb8d883e-7494-4035-aa99-bacbd78c0245/tasks/68392d32-ac80-4178-8c6a-7eb29b7d374a 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/eb8d883e-7494-4035-aa99-bacbd78c0245/tasks/df5ac97d-48f3-4569-9b67-f99ae09c40bd 
+      query params: {} 
+      request body: {}
+info: DELETE request:
+      url: /boards/eb8d883e-7494-4035-aa99-bacbd78c0245/tasks/68392d32-ac80-4178-8c6a-7eb29b7d374a 
+      query params: {} 
+      request body: {}
+info: DELETE request:
+      url: /boards/eb8d883e-7494-4035-aa99-bacbd78c0245/tasks/df5ac97d-48f3-4569-9b67-f99ae09c40bd 
+      query params: {} 
+      request body: {}
+info: DELETE request:
+      url: /boards/eb8d883e-7494-4035-aa99-bacbd78c0245 
+      query params: {} 
+      request body: {}
+info: GET request:
+      url: /boards/12345/tasks 
+      query params: {} 
+      request body: {}
+error: user not authorized: 401 {"service":"user-service"}
+info: GET request:
+      url: /boards/12345/tasks/12345 
+      query params: {} 
+      request body: {}
+error: user not authorized: 401 {"service":"user-service"}
+info: POST request:
+      url: /boards/12345/tasks 
+      query params: {} 
+      request body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+error: user not authorized: 401 {"service":"user-service"}
+info: PUT request:
+      url: /boards/12345/tasks/12345 
+      query params: {} 
+      request body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+error: user not authorized: 401 {"service":"user-service"}
+info: DELETE request:
+      url: /boards/12345/tasks/12345 
+      query params: {} 
+      request body: {}
+error: user not authorized: 401 {"service":"user-service"}
+info: GET request:
+      url: /users 
+      query params: {} 
+      request body: {}
+error: user not authorized: 401 {"service":"user-service"}
+info: GET request:
+      url: /users/123 
+      query params: {} 
+      request body: {}
+error: user not authorized: 401 {"service":"user-service"}
+info: POST request:
+      url: /users 
+      query params: {} 
+      request body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+error: user not authorized: 401 {"service":"user-service"}
+info: PUT request:
+      url: /users/12345 
+      query params: {} 
+      request body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+error: user not authorized: 401 {"service":"user-service"}
+info: DELETE request:
+      url: /users/12345 
+      query params: {} 
+      request body: {}
+error: user not authorized: 401 {"service":"user-service"}
